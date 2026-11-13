@@ -277,7 +277,7 @@ button {
 .subtitulo-sobre {
     font-size: 1.5rem;
     color: var(--cor-secundaria);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .texto-sobre {
