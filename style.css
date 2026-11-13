@@ -95,11 +95,11 @@ button {
 }
 
 .nome-empresa {
+    padding-left: 10px;
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--cor-texto-claro);
 }
-
 
 /*MENU DE NAVEGAÇÃO*/
 .menu-navegacao {
@@ -116,9 +116,7 @@ button {
 .link-menu {
     font-size: 1rem;
     font-weight: bold;
-
     color: var(--cor-texto-claro);
-
     transition: var(--transicao);
 }
 
@@ -129,47 +127,37 @@ button {
 /*BOTÃO HAMBÚRGUER*/
 .menu-hamburguer {
     display: none;
-
     flex-direction: column;
     justify-content: center;
     gap: 6px;
-
     width: 40px;
     height: 40px;
-
     background: transparent;
     border: none;
-
     cursor: pointer;
 }
 
 .linha-menu {
     width: 30px;
     height: 3px;
-
     background-color: var(--cor-texto-claro);
-
     border-radius: 5px;
 }
 
 /*SEÇÃO INICIAL*/
 .secao-inicio {
     min-height: 600px;
-
     background:
         linear-gradient(
             rgba(15, 30, 48, 0.75),
             rgba(15, 30, 48, 0.75)
         ),
-        url("../img/servico-01.jpg");
-
+        url("img/fundo-azulejo.jpg");
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 80px 5%;
 
     color: var(--cor-texto-claro);
@@ -194,17 +182,12 @@ button {
 /*BOTÃO DE ORÇAMENTO*/
 .botao-orcamento {
     display: inline-block;
-
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
-
     padding: 14px 30px;
-
     border-radius: 5px;
-
     font-weight: bold;
     font-size: 1rem;
-
     transition: var(--transicao);
 }
 
@@ -214,12 +197,10 @@ button {
 }
 
 .secao-inicio {
-    background-image: url("img/landscape-placeholder.svg");
-
+    background-image: url("img/fundo-azulejo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 }
 
@@ -229,15 +210,12 @@ button {
             rgba(23, 44, 70, 0.80),
             rgba(23, 44, 70, 0.80)
         ),
-        url("img/landscape-placeholder.svg");
-
+        url("img/fundo-azulejo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     padding: 90px 5%;
-
     color: #ffffff;
 }
 
@@ -251,24 +229,17 @@ button {
 .titulo-secao {
     font-size: 2.2rem;
     color: var(--cor-principal);
-
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .titulo-secao::after {
     content: "";
-
     display: block;
-
     width: 70px;
     height: 4px;
-
     background-color: var(--cor-destaque);
-
     margin: 12px auto 0;
-
     border-radius: 5px;
 }
 
@@ -295,9 +266,7 @@ button {
 .sobre-imagem {
     width: 100%;
     height: 400px;
-
     object-fit: cover;
-
     border-radius: 10px;
 }
 
@@ -308,15 +277,12 @@ button {
 .subtitulo-sobre {
     font-size: 1.5rem;
     color: var(--cor-secundaria);
-
     margin-bottom: 20px;
 }
 
 .texto-sobre {
     color: var(--cor-texto-secundario);
-
     margin-bottom: 18px;
-
     text-align: justify;
 }
 
@@ -332,44 +298,34 @@ button {
 
 .descricao-galeria {
     text-align: center;
-
     color: var(--cor-texto-secundario);
-
     margin-top: -25px;
     margin-bottom: 40px;
 }
 
 .galeria-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .galeria-item {
     background-color: #ffffff;
-
     border-radius: 8px;
     overflow: hidden;
-
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-
     transition: var(--transicao);
 }
 
 .galeria-item:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .galeria-imagem {
     width: 100%;
     height: 250px;
-
     object-fit: cover;
-
     transition: var(--transicao);
 }
 
@@ -379,10 +335,8 @@ button {
 
 .galeria-legenda {
     padding: 15px;
-
     font-weight: bold;
     color: var(--cor-principal);
-
     text-align: center;
 }
 
@@ -398,67 +352,49 @@ button {
 
 .descricao-contato {
     text-align: center;
-
     color: var(--cor-texto-secundario);
-
     margin-top: -25px;
     margin-bottom: 45px;
 }
 
 .contato-conteudo {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .contato-item {
     background-color: var(--cor-fundo-secundario);
-
     padding: 35px 20px;
-
     border-radius: 8px;
-
     text-align: center;
-
     border-bottom: 4px solid var(--cor-destaque);
-
     transition: var(--transicao);
 }
 
 .contato-item:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contato-subtitulo {
     color: var(--cor-principal);
-
     font-size: 1.3rem;
-
     margin-bottom: 12px;
 }
 
 .contato-texto {
     color: var(--cor-texto-secundario);
-
     margin-bottom: 20px;
 }
 
 .link-contato {
     display: inline-block;
-
     background-color: var(--cor-principal);
     color: #ffffff;
-
     padding: 10px 18px;
-
     border-radius: 5px;
-
     font-weight: bold;
-
     transition: var(--transicao);
 }
 
@@ -471,24 +407,19 @@ button {
 .rodape {
     background-color: var(--cor-principal);
     color: var(--cor-texto-claro);
-
     padding: 50px 5% 20px;
 }
 
 .rodape-container {
     max-width: var(--largura-maxima);
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: 2fr 1fr;
-
     gap: 40px;
 }
 
 .rodape-nome {
     font-size: 1.4rem;
-
     margin-bottom: 15px;
 }
 
@@ -498,7 +429,6 @@ button {
 
 .rodape-subtitulo {
     font-size: 1.1rem;
-
     margin-bottom: 15px;
 }
 
@@ -510,7 +440,6 @@ button {
 
 .rodape-link {
     color: #d1d9e2;
-
     transition: var(--transicao);
 }
 
@@ -520,11 +449,8 @@ button {
 
 .rodape-informacoes {
     grid-column: 1 / -1;
-
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-
     padding-top: 20px;
-
     text-align: center;
 }
 
@@ -774,4 +700,8 @@ button {
         width: 30px;
         height: 30px;
     }
+}
+
+#sobre-nos {
+    padding-top: 2vh;
 }
