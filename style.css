@@ -146,7 +146,6 @@ button {
 
 /*CONFIGURAÇÕES DAS SEÇÕES*/
 .secao-sobre,
-.secao-galeria,
 .secao-contato {
     padding: 90px 5%;
 }
@@ -211,60 +210,6 @@ button {
     text-align: justify;
 }
 
-/*SEÇÃO GALERIA*/
-.secao-galeria {
-    background-color: var(--cor-fundo-secundario);
-}
-
-.galeria-container {
-    max-width: var(--largura-maxima);
-    margin: 0 auto;
-}
-
-.descricao-galeria {
-    text-align: center;
-    color: var(--cor-texto-secundario);
-    margin-top: -25px;
-    margin-bottom: 40px;
-}
-
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.galeria-item {
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-    transition: var(--transicao);
-}
-
-.galeria-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-.galeria-imagem {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: var(--transicao);
-}
-
-.galeria-item:hover .galeria-imagem {
-    transform: scale(1.04);
-}
-
-.galeria-legenda {
-    padding: 15px;
-    font-weight: bold;
-    color: var(--cor-principal);
-    text-align: center;
-}
-
 /*SEÇÃO CONTATO*/
 .secao-contato {
     background-color: var(--cor-fundo);
@@ -284,7 +229,8 @@ button {
 
 .contato-conteudo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(0, 500px);
+    justify-content: center;
     gap: 25px;
 }
 
@@ -394,10 +340,6 @@ button {
     .sobre-conteudo {
         gap: 30px;
     }
-
-    .galeria-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 /*RESPONSIVIDADE - CELULARES*/
@@ -441,7 +383,6 @@ button {
 
     /*SEÇÕES*/
     .secao-sobre,
-    .secao-galeria,
     .secao-contato {
         padding: 65px 5%;
     }
@@ -463,16 +404,6 @@ button {
 
     .sobre-imagem {
         height: 300px;
-    }
-
-    /*GALERIA*/
-    .galeria-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .galeria-imagem {
-        height: 180px;
     }
 
     /*CONTATO*/
@@ -510,14 +441,6 @@ button {
 
     .titulo-secao {
         font-size: 1.6rem;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .galeria-imagem {
-        height: 230px;
     }
 
     .sobre-imagem {
