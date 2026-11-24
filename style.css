@@ -144,81 +144,6 @@ button {
     border-radius: 5px;
 }
 
-/*SEÇÃO INICIAL*/
-.secao-inicio {
-    min-height: 600px;
-    background:
-        linear-gradient(
-            rgba(15, 30, 48, 0.75),
-            rgba(15, 30, 48, 0.75)
-        ),
-        url("img/fundo-azulejo.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 5%;
-
-    color: var(--cor-texto-claro);
-    text-align: center;
-}
-
-.inicio-conteudo {
-    max-width: 800px;
-}
-
-.titulo-inicio {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
-.texto-inicio {
-    font-size: 1.2rem;
-    margin-bottom: 35px;
-}
-
-/*BOTÃO DE ORÇAMENTO*/
-.botao-orcamento {
-    display: inline-block;
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-    padding: 14px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: var(--transicao);
-}
-
-.botao-orcamento:hover {
-    background-color: #ffffff;
-    transform: translateY(-3px);
-}
-
-.secao-inicio {
-    background-image: url("img/fundo-azulejo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.secao-inicio {
-    background:
-        linear-gradient(
-            rgba(23, 44, 70, 0.80),
-            rgba(23, 44, 70, 0.80)
-        ),
-        url("img/fundo-azulejo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 90px 5%;
-    color: #ffffff;
-}
-
 /*CONFIGURAÇÕES DAS SEÇÕES*/
 .secao-sobre,
 .secao-galeria,
@@ -464,13 +389,6 @@ button {
     margin-top: 5px;
 }
 
-/*REMOÇÃO DA IMAGEM DE FUNDO EM TELAS PEQUENAS*/
-@media screen and (max-width: 768px) {
-    .secao-inicio {
-        background-attachment: scroll;
-    }
-}
-
 /*RESPONSIVIDADE - TABLETS*/
 @media screen and (max-width: 900px) {
     .sobre-conteudo {
@@ -479,10 +397,6 @@ button {
 
     .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .titulo-inicio {
-        font-size: 2.5rem;
     }
 }
 
@@ -523,20 +437,6 @@ button {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    }
-
-    /*SEÇÃO INICIAL*/
-    .secao-inicio {
-        min-height: 500px;
-        padding: 60px 5%;
-    }
-
-    .titulo-inicio {
-        font-size: 2rem;
-    }
-
-    .texto-inicio {
-        font-size: 1rem;
     }
 
     /*SEÇÕES*/
