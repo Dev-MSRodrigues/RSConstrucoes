@@ -187,10 +187,17 @@ button {
     flex: 1;
 }
 
+.sobre-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sobre-imagem img {
-    width: 30%;
-    height: auto;
+    width: 100%;
+    max-height: 350px;
     object-fit: contain;
+    object-position: center;
 }
 
 .sobre-texto-container {
