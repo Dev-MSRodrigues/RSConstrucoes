@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços profissionais de azulejista, assentamento de pisos, revestimentos e acabamentos.">
+    <meta name="author" content="RSConstruções">
+    <title>RSConstruções | Azulejista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons/landscape-placeholder.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/landscape-placeholder.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/landscape-placeholder.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/landscape-placeholder.svg">
+</head>
+
+<body>
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header id="cabecalho" class="cabecalho">
+        <!-- Logo e nome da empresa -->
+        <div id="logo-container" class="logo-container">
+            <img
+                src="img/landscape-placeholder.svg"
+                alt="Logo da empresa"
+                id="logo"
+                class="logo"
+            >
+            <span id="nome-empresa" class="nome-empresa">RSConstruções</span>
+        </div>
+
+        <!-- Botão do menu hambúrgue -->
+        <button
+            type="button"
+            id="menu-hamburguer"
+            class="menu-hamburguer"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-navegacao"
+        >
+            <span class="linha-menu"></span>
+            <span class="linha-menu"></span>
+            <span class="linha-menu"></span>
+        </button>
+
+        <!-- Menu de navegação -->
+        <nav id="menu-navegacao" class="menu-navegacao">
+            <ul id="lista-menu" class="lista-menu">
+                <li class="item-menu">
+                    <a href="#inicio" class="link-menu">Início</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#sobre-nos" class="link-menu">Sobre nós</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#galeria" class="link-menu">Galeria</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#contato" class="link-menu">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal" class="conteudo-principal">
+        <!-- SEÇÃO INICIAL -->
+        
+        <section id="inicio" class="secao-inicio">
+            <div id="inicio-conteudo" class="inicio-conteudo">
+                <h1 id="titulo-inicio" class="titulo-inicio">Qualidade e perfeição em cada detalhe!</h1>
+
+                <p id="texto-inicio" class="texto-inicio">Especialistas em assentamento de pisos, azulejos e revestimentos. Transformamos ambientes com profissionalismo e dedicação.</p>
+
+                <a
+                    href="#contato"
+                    id="botao-orcamento"
+                    class="botao-orcamento"
+                >
+                    Solicite um orçamento
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section id="sobre-nos" class="secao-sobre">
+            <div id="sobre-container" class="sobre-container">
+                <h2 id="titulo-sobre" class="titulo-secao">Sobre nós</h2>
+
+                <div id="sobre-conteudo" class="sobre-conteudo">
+                    <div id="sobre-imagem-container" class="sobre-imagem-container">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Profissional realizando serviço de assentamento de azulejos"
+                            id="sobre-imagem"
+                            class="sobre-imagem"
+                        >
+                    </div>
+
+                    <div id="sobre-texto-container" class="sobre-texto-container">
+                        <h3 id="subtitulo-sobre" class="subtitulo-sobre">Compromisso, qualidade e dedicação</h3>
+
+                        <p id="texto-sobre-1" class="texto-sobre"> Somos uma microempresa especializada em serviços de azulejista, trabalhando com dedicação e atenção aos detalhes para entregar resultados de qualidade.</p>
+
+                        <p id="texto-sobre-2" class="texto-sobre"> Realizamos assentamento de pisos, azulejos, porcelanatos e revestimentos em geral, tanto em ambientes residenciais quanto comerciais.</p>
+
+                        <p id="texto-sobre-3" class="texto-sobre">Nosso compromisso é oferecer um serviço bem executado, com organização, responsabilidade e satisfação dos clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GALERIA -->
+        <section id="galeria" class="secao-galeria">
+            <div id="galeria-container" class="galeria-container">
+                <h2 id="titulo-galeria" class="titulo-secao">Nossa galeria</h2>
+
+                <p id="descricao-galeria" class="descricao-galeria">Confira alguns dos nossos trabalhos realizados.</p>
+
+                <!-- Grade de imagens -->
+                <div id="galeria-grid" class="galeria-grid">
+                    <!-- Imagem 01 -->
+                    <div class="galeria-item" id="galeria-item-01">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Serviço de assentamento de porcelanato"
+                            class="galeria-imagem"
+                            id="galeria-imagem-01"
+                        >
+
+                        <p class="galeria-legenda">Assentamento de porcelanato</p>
+                    </div>
+
+                    <!-- Imagem 02 -->
+                    <div class="galeria-item" id="galeria-item-02">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Revestimento de parede"
+                            class="galeria-imagem"
+                            id="galeria-imagem-02"
+                        >
+
+                        <p class="galeria-legenda">Revestimento de parede</p>
+                    </div>
+
+                    <!-- Imagem 03 -->
+                    <div class="galeria-item" id="galeria-item-03">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Acabamento de banheiro"
+                            class="galeria-imagem"
+                            id="galeria-imagem-03"
+                        >
+                        <p class="galeria-legenda">Acabamento de banheiro</p>
+                    </div>
+
+                    <!-- Imagem 04 -->
+                    <div class="galeria-item" id="galeria-item-04">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Assentamento de pisos"
+                            class="galeria-imagem"
+                            id="galeria-imagem-04"
+                        >
+
+                        <p class="galeria-legenda">Assentamento de pisos</p>
+                    </div>
+
+                    <!-- Imagem 05 -->
+                    <div class="galeria-item" id="galeria-item-05">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Revestimento de cozinha"
+                            class="galeria-imagem"
+                            id="galeria-imagem-05"
+                        >
+
+                        <p class="galeria-legenda">Revestimento de cozinha</p>
+                    </div>
+
+                    <!-- Imagem 06 -->
+                    <div class="galeria-item" id="galeria-item-06">
+                        <img
+                            src="img/landscape-placeholder.svg"
+                            alt="Detalhes de acabamento em revestimento"
+                            class="galeria-imagem"
+                            id="galeria-imagem-06"
+                        >
+
+                        <p class="galeria-legenda">Detalhes de acabamento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="secao-contato">
+            <div id="contato-container" class="contato-container">
+                <h2 id="titulo-contato" class="titulo-secao">Entre em contato</h2>
+
+                <p id="descricao-contato" class="descricao-contato">Gostou do nosso trabalho? Entre em contato conosco e solicite um orçamento sem compromisso!</p>
+
+                <!-- Informações de contato -->
+                <div id="contato-conteudo" class="contato-conteudo">
+                    <!-- WhatsApp -->
+                    <div id="contato-whatsapp" class="contato-item">
+                        <h3 class="contato-subtitulo">WhatsApp</h3>
+
+                        <p class="contato-texto">Fale diretamente conosco.</p>
+
+                        <a
+                            href="https://wa.me/5500000000000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="link-whatsapp"
+                            class="link-contato"
+                        >
+                            Conversar pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div id="contato-instagram" class="contato-item">
+                        <h3 class="contato-subtitulo">Instagram</h3>
+
+                        <p class="contato-texto">Acompanhe nossos trabalhos.</p>
+
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="link-instagram"
+                            class="link-contato"
+                        >
+                            Visitar Instagram
+                        </a>
+
+                    </div>
+                    
+
+                    <!-- Facebook -->
+                    <div id="contato-facebook" class="contato-item">
+                        <h3 class="contato-subtitulo">Facebook</h3>
+
+                        <p class="contato-texto">Confira nossa página.</p>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="link-facebook"
+                            class="link-contato"
+                        >
+                            Visitar Facebook
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape" class="rodape">
+        <div id="rodape-container" class="rodape-container">
+            <!-- Nome e descrição -->
+            <div id="rodape-identidade" class="rodape-identidade">
+                <h3 id="rodape-nome" class="rodape-nome">RSConstruções</h3>
+
+                <p id="rodape-descricao" class="rodape-descricao">Serviços profissionais de azulejista, pisos e revestimentos.</p>
+            </div>
+
+            <!-- Links rápidos -->
+            <div id="rodape-links" class="rodape-links">
+                <h3 class="rodape-subtitulo">Navegação</h3>
+
+                <ul class="rodape-lista">
+                    <li class="rodape-item">
+                        <a href="#inicio" class="rodape-link">Início</a>
+                    </li>
+
+                    <li class="rodape-item">
+                        <a href="#sobre-nos" class="rodape-link">Sobre nós</a>
+                    </li>
+
+                    <li class="rodape-item">
+                        <a href="#galeria" class="rodape-link">Galeria</a>
+                    </li>
+
+                    <li class="rodape-item">
+                        <a href="#contato" class="rodape-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Informações finais -->
+            <div id="rodape-informacoes" class="rodape-informacoes">
+                <p id="rodape-copyright" class="rodape-copyright">&copy; 2026 RSConstruções. Todos os direitos reservados.</p>
+
+                <p id="rodape-creditos" class="rodape-creditos">Desenvolvido por Mateus S. Rodrigues.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a
+        href="https://wa.me/5551999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+        target="_blank"
+        rel="noopener noreferrer"
+        id="whatsapp-flutuante"
+        class="whatsapp-flutuante"
+        aria-label="Solicitar orçamento pelo WhatsApp"
+        title="Fale conosco pelo WhatsApp"
+    >
+        <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/whatsapp.svg"
+            alt=""
+            id="icone-whatsapp-flutuante"
+            class="icone-whatsapp-flutuante"
+        >
+    </a>
+</body>
+</html>
