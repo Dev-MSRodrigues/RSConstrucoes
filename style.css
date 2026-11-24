@@ -183,10 +183,6 @@ button {
     gap: 50px;
 }
 
-.sobre-imagem-container {
-    flex: 1;
-}
-
 .sobre-imagem {
     display: flex;
     justify-content: center;
