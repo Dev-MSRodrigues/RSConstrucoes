@@ -9,10 +9,10 @@
     <meta name="author" content="RSConstruções">
     <title>RSConstruções | Azulejista</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/icons/landscape-placeholder.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/landscape-placeholder.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/landscape-placeholder.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/landscape-placeholder.svg">
+    <link rel="icon" type="image/x-icon" href="img/icons/icon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/icon.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/icon.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon.webp">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <!-- Logo e nome da empresa -->
         <div id="logo-container" class="logo-container">
             <img
-                src="img/landscape-placeholder.svg"
+                src="img/logo.jpg"
                 alt="Logo da empresa"
                 id="logo"
                 class="logo"
@@ -94,7 +94,7 @@
                     <div id="sobre-imagem-container" class="sobre-imagem-container">
                         <img
                             src="img/landscape-placeholder.svg"
-                            alt="Profissional realizando serviço de assentamento de azulejos"
+                            alt="Roger Rodrigues, dono da empresa"
                             id="sobre-imagem"
                             class="sobre-imagem"
                         >
@@ -212,7 +212,7 @@
                         <p class="contato-texto">Fale diretamente conosco.</p>
 
                         <a
-                            href="https://wa.me/5500000000000"
+                            href="https://wa.me/5553981194530"
                             target="_blank"
                             rel="noopener noreferrer"
                             id="link-whatsapp"
@@ -310,7 +310,7 @@
     
     <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
     <a
-        href="https://wa.me/5551999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+        href="https://wa.me/5553981194530?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
         target="_blank"
         rel="noopener noreferrer"
         id="whatsapp-flutuante"
