@@ -144,8 +144,84 @@ button {
     border-radius: 5px;
 }
 
+/*SEÇÃO INICIAL*/
+.secao-inicio {
+    min-height: 600px;
+    background:
+        linear-gradient(
+            rgba(15, 30, 48, 0.75),
+            rgba(15, 30, 48, 0.75)
+        ),
+        url("img/fundo-azulejo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 5%;
+
+    color: var(--cor-texto-claro);
+    text-align: center;
+}
+
+.inicio-conteudo {
+    max-width: 800px;
+}
+
+.titulo-inicio {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.texto-inicio {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+}
+
+/*BOTÃO DE ORÇAMENTO*/
+.botao-orcamento {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: var(--transicao);
+}
+
+.botao-orcamento:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.secao-inicio {
+    background-image: url("img/fundo-azulejo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.secao-inicio {
+    background:
+        linear-gradient(
+            rgba(23, 44, 70, 0.80),
+            rgba(23, 44, 70, 0.80)
+        ),
+        url("img/fundo-azulejo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 90px 5%;
+    color: #ffffff;
+}
+
 /*CONFIGURAÇÕES DAS SEÇÕES*/
 .secao-sobre,
+.secao-galeria,
 .secao-contato {
     padding: 90px 5%;
 }
@@ -183,14 +259,15 @@ button {
     gap: 50px;
 }
 
+.sobre-imagem-container {
+    flex: 1;
+}
+
 .sobre-imagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    max-height: 350px;
+    height: 300px;
     object-fit: cover;
-    object-position: center;
+    border-radius: 10px;
 }
 
 .sobre-texto-container {
@@ -207,6 +284,60 @@ button {
     color: var(--cor-texto-secundario);
     margin-bottom: 18px;
     text-align: justify;
+}
+
+/*SEÇÃO GALERIA*/
+.secao-galeria {
+    background-color: var(--cor-fundo-secundario);
+}
+
+.galeria-container {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+}
+
+.descricao-galeria {
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    margin-top: -25px;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.galeria-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: var(--transicao);
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-imagem {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transicao);
+}
+
+.galeria-item:hover .galeria-imagem {
+    transform: scale(1.04);
+}
+
+.galeria-legenda {
+    padding: 15px;
+    font-weight: bold;
+    color: var(--cor-principal);
+    text-align: center;
 }
 
 /*SEÇÃO CONTATO*/
@@ -228,8 +359,7 @@ button {
 
 .contato-conteudo {
     display: grid;
-    grid-template-columns: minmax(0, 500px);
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -334,10 +464,25 @@ button {
     margin-top: 5px;
 }
 
+/*REMOÇÃO DA IMAGEM DE FUNDO EM TELAS PEQUENAS*/
+@media screen and (max-width: 768px) {
+    .secao-inicio {
+        background-attachment: scroll;
+    }
+}
+
 /*RESPONSIVIDADE - TABLETS*/
 @media screen and (max-width: 900px) {
     .sobre-conteudo {
         gap: 30px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo-inicio {
+        font-size: 2.5rem;
     }
 }
 
@@ -380,8 +525,23 @@ button {
         gap: 20px;
     }
 
+    /*SEÇÃO INICIAL*/
+    .secao-inicio {
+        min-height: 500px;
+        padding: 60px 5%;
+    }
+
+    .titulo-inicio {
+        font-size: 2rem;
+    }
+
+    .texto-inicio {
+        font-size: 1rem;
+    }
+
     /*SEÇÕES*/
     .secao-sobre,
+    .secao-galeria,
     .secao-contato {
         padding: 65px 5%;
     }
@@ -403,6 +563,16 @@ button {
 
     .sobre-imagem {
         height: 300px;
+    }
+
+    /*GALERIA*/
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .galeria-imagem {
+        height: 180px;
     }
 
     /*CONTATO*/
@@ -440,6 +610,14 @@ button {
 
     .titulo-secao {
         font-size: 1.6rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-imagem {
+        height: 230px;
     }
 
     .sobre-imagem {
